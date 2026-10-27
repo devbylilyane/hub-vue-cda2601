@@ -4,6 +4,7 @@ import TPDataBinding from '../components/TPDataBinding.vue'
 import TPDynamicStyling from '../components/TPDynamicStyling.vue'
 import TPWatcherComputed from '../components/TPWatcherComputed.vue'
 import TPListConditionalRendering from '../components/TPListConditionalRendering.vue'
+import TPRouterProps from '../components/TPRouterProps.vue'
 </script>
 
 <template>
@@ -27,6 +28,10 @@ import TPListConditionalRendering from '../components/TPListConditionalRendering
 
     <section id="list-conditional-tp" class="scroll-mt-8">
       <TPListConditionalRendering />
+    </section>
+
+    <section id="router-props-tp" class="scroll-mt-8">
+      <TPRouterProps />
     </section>
 
   </main>

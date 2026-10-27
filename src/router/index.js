@@ -77,12 +77,22 @@ const router = createRouter({
       component: () => import('../components/TPListConditionalRendering.vue')
     },
 
+    
     // TP Watcher Computed
     {
       path: '/tp-watcher-computed',
       name: 'tp-watcher-computed',
       component: () => import('../components/TPWatcherComputed.vue')
+    },
+
+    // TP Router + Props : page de détails
+    {
+      path: '/details/:id/:name',
+      name: 'details',
+      component: () => import('../views/DetailsPage.vue'),
+      props: true
     }
+
 
   ],
 

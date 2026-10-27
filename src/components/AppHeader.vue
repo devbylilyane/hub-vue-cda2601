@@ -227,6 +227,12 @@ function fermerMenu() {
               TP List / Conditional Rendering
             </router-link>
           </li>
+
+          <li>
+            <router-link to="/tp#router-props">
+              TP Router + Props
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>

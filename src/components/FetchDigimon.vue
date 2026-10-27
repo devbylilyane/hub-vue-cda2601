@@ -17,7 +17,7 @@ onMounted(async () => {
 <template>
   <div class="card bg-base-100 shadow-xl p-6">
     <h2 class="text-2xl font-bold text-pink-500 mb-4">
-      Digimons :
+      Exercice: les Digimons :
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
