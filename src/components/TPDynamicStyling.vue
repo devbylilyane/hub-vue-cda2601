@@ -2,14 +2,14 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// Valeurs saisies dans les inputs
+// valeurs saisies dans les inputs
 const texte = ref('')
 const couleur = ref('')
 
-// Visibilité du premier H2
+// visibilité du premier H2
 const afficherTitre = ref(true)
 
-// Classe CSS selon le premier input
+// classe CSS selon le premier input
 const classeDynamique = computed(() => {
   if (texte.value === 'helllo') {
     return 'maClasseHello'
@@ -22,7 +22,7 @@ const classeDynamique = computed(() => {
   return ''
 })
 
-// Afficher ou masquer le premier H2
+// afficher ou masquer le premier H2
 function changerVisibilite() {
   afficherTitre.value = !afficherTitre.value
 }
@@ -31,10 +31,10 @@ function changerVisibilite() {
 <template>
   <section class="p-6">
     <h1 class="text-2xl font-bold mb-6">
-      Exercice 2 : Dynamic Styling
+      TP : Dynamic Styling
     </h1>
 
-    <!-- Premier input -->
+    <!-- premier input -->
     <input
       v-model="texte"
       type="text"
@@ -42,7 +42,7 @@ function changerVisibilite() {
       class="input input-bordered w-full mb-2"
     />
 
-    <!-- Premier H2 : classe dynamique -->
+    <!-- premier H2 : classe dynamique -->
     <h2
       v-show="afficherTitre"
       :class="classeDynamique"
@@ -51,7 +51,7 @@ function changerVisibilite() {
       Hello World (classe dynamique)
     </h2>
 
-    <!-- Deuxième input -->
+    <!-- deuxième input -->
     <input
       v-model="couleur"
       type="text"
@@ -59,7 +59,7 @@ function changerVisibilite() {
       class="input input-bordered w-full mb-2"
     />
 
-    <!-- Deuxième H2 : couleur dynamique -->
+    <!-- deuxième H2 : couleur dynamique -->
     <h2
       :style="{ backgroundColor: couleur }"
       class="text-xl font-bold mb-6"
@@ -67,7 +67,7 @@ function changerVisibilite() {
       Hello World (couleur dynamique)
     </h2>
 
-    <!-- Bouton -->
+    <!-- bouton -->
     <button
       class="btn btn-primary"
       @click="changerVisibilite"
