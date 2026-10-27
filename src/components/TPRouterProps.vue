@@ -11,7 +11,7 @@ const utilisateurs = [
 <template>
   <section class="p-6">
     <h2 class="text-2xl font-bold text-center mb-6">
-      Exemple de route dynamique (avec paramètres en props) :
+      TP: Exemple de route dynamique (avec paramètres en props) :
     </h2>
 
     <div class="bg-base-100 rounded-lg shadow-lg p-4">
