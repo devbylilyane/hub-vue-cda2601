@@ -1,6 +1,6 @@
-
 <script setup>
 import { ref, onMounted } from 'vue'
+import DigimonCard from './DigimonCard.vue'
 
 const digimons = ref([])
 
@@ -15,27 +15,18 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="card bg-base-100 shadow-xl p-6 mt-6">
-    <h2 class="text-2xl font-bold mb-4">
-      Les Digimon
+  <div class="card bg-base-100 shadow-xl p-6">
+    <h2 class="text-2xl font-bold text-pink-500 mb-4">
+      Digimons :
     </h2>
 
-    <div class="flex flex-wrap gap-4">
-      <div
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <DigimonCard
         v-for="digimon in digimons"
         :key="digimon.name"
-        class="flex flex-col items-center gap-2"
-      >
-        <img
-          :src="digimon.img"
-          :alt="digimon.name"
-          class="w-24 h-24 object-contain"
-        />
-
-        <span class="badge badge-primary">
-          {{ digimon.name }}
-        </span>
-      </div>
+        :name="digimon.name"
+        :img="digimon.img"
+      />
     </div>
   </div>
 </template>
